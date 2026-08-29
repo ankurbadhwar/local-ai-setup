@@ -1,0 +1,33 @@
+{
+  "$schema": "https://app.kilo.ai/config.json",
+
+  "model": "local-llama/lucataco/Qwen3-Coder-30B-A3B-Instruct-Q4_K_M-GGUF:Q4_K_M",
+
+  "auto_collapse_reasoning": true,
+  "terminal_command_display": "collapsed",
+
+  "permission": {
+    "bash": "allow"
+  },
+
+  "disabled_providers": [],
+
+  "provider": {
+    "local-llama": {
+      "name": "Local llama.cpp",
+
+      "npm": "@ai-sdk/openai-compatible",
+
+      "options": {
+        "baseURL": "http://127.0.0.1:8080/v1",
+        "timeout": 300000
+      },
+
+      "models": {
+        "lucataco/Qwen3-Coder-30B-A3B-Instruct-Q4_K_M-GGUF:Q4_K_M": {
+          "name": "Qwen3-Coder 30B A3B"
+        }
+      }
+    }
+  }
+}

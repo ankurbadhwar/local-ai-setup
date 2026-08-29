@@ -1,32 +1,74 @@
-# Prerequisites
-*.d
+# Local AI setup
+*.gguf
+*.gguf.*
+models/
+model/
+models-cache/
+.cache/
+.cache-*/
+.huggingface/
+huggingface/
+hf_cache/
 
-# Compiled Object files
-*.slo
-*.lo
+# Runtime and logs
+*.log
+logs/
+*.db
+*.db-shm
+*.db-wal
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+ENV/
+
+# Build and compiled files
+build/
+dist/
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
 *.lib
-
-# Executables
+*.la
+*.lai
+*.lo
+*.slo
+*.gch
+*.pch
 *.exe
 *.out
 *.app
+
+# Editor and IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local configuration
+*.local
+*.secret
+*.secrets
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup

@@ -1,0 +1,16 @@
+[Unit]
+Description=Local Qwen Coding LLM via llama.cpp
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%h/AI/scripts/start-llama-server.sh
+Restart=on-failure
+RestartSec=5
+TimeoutStartSec=120
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
